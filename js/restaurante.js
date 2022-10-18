@@ -155,7 +155,7 @@ function nuevaReserva(e){
 
     reservaDetalle.id= Date.now();
     administrarReservas.crearReserva({...reservaDetalle});
-    administrarReservas.guardarReserva({...reservaDetalle});
+    //administrarReservas.guardarReserva({...reservaDetalle});
     crearVistaReserva(administrarReservas);
     alerta("success");
     formulario.reset(); 
