@@ -1,0 +1,76 @@
+
+
+.fadeIn {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Mensajes error y ok */
+.error{
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 4px 0;
+}
+
+.success{
+    background-color: #26B214;
+    color : white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 4px 0;
+}
+
+.success:after {
+    content:": Reserva guardada";
+}
+
+.error:after {
+    content:": Rellenar todos los campos";
+}
+
+/* boton reserva */
+
+.botonReserva{
+    display: grid;
+    place-items: center;
+}
+
+/* CARDS */
+
+.card{
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba (255, 255, 255, 0.1);
+    box-shadow: 5px 5px 30px rgba(247, 242, 242, 0.4);
+}
+.card button{
+    margin-top: 10px;
+}
+.card button:hover{
+    background-color: #dae5d8;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 8fr));
+    grid-gap: 2rem;
+    text-align: center;
+    margin: 0 3rem;
+}

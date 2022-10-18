@@ -1,0 +1,15 @@
+
+/*MOSTRAR CAMPOS DEL FORMULARIO EN LAS TARJETAS */
+
+
+.card h4:before{
+    content:"Nombre: ";
+}
+
+$campos: hora, personas, fecha;
+
+@for $i from 0 through 2 {
+	p:before{
+        content: #{$i};
+    } 
+}
